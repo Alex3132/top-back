@@ -29,8 +29,8 @@ public class StartupDataInit {
         }
         
         if(this.collegueRepo.count() <=0) {
-        	this.collegueRepo.save(new Collegue("Alex", "http://www.joomlack.fr/images/stories/images/on-top-of-earth.jpg", 150));
-        	this.collegueRepo.save(new Collegue("Nico", "https://www.bmw.fr/content/dam/bmw/common/all-models/4-series/gran-coupe/2017/images-and-videos/images/BMW-4-series-gran-coupe-images-and-videos-1920x1200-10.jpg.asset.1487328157424.jpg", 500));
+        	this.collegueRepo.save(new Collegue("Angel", "http://www.joomlack.fr/images/stories/images/on-top-of-earth.jpg", 150,"Zueras","Alexis","alexis.zueras.pro@gmail.com","rue de la rue, 34000 Montpellier"));
+        	this.collegueRepo.save(new Collegue("Nico", "https://www.bmw.fr/content/dam/bmw/common/all-models/4-series/gran-coupe/2017/images-and-videos/images/BMW-4-series-gran-coupe-images-and-videos-1920x1200-10.jpg.asset.1487328157424.jpg", 500,"Schauss","Nicolas","nico.schauss.pro@gmail.com","cité de carcassonne, 11000 Carcassonne"));
         }
 
     }

@@ -46,4 +46,11 @@ public class CollegueController {
 		this.collegueRepo.save(collegue);
 		return collegue;
 	}
+	
+	@GetMapping("/{pseudo}")
+	public Collegue recupererCollegue(@PathVariable String pseudo) {
+		Collegue collegue = collegueRepo.findByPseudo(pseudo);
+		return collegue;
+		
+	}
 }
