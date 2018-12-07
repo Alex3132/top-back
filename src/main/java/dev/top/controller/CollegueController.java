@@ -65,7 +65,11 @@ public class CollegueController {
 		if(tabExternalCols.length == 1) {
 			
 			col.setPseudo(collegueForm.getPseudo());
-			col.setImageUrl(collegueForm.getImageUrl());
+			if(collegueForm.getImageUrl() != null)
+				col.setImageUrl(collegueForm.getImageUrl());
+			else
+				col.setImageUrl(tabExternalCols[0].getPhoto());
+			
 			col.setMail(tabExternalCols[0].getEmail());
 			col.setNom(tabExternalCols[0].getNom());
 			col.setPrenom(tabExternalCols[0].getPrenom());
